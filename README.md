@@ -4,8 +4,8 @@
     <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/af320516-f254-4869-830d-7c86a3950a25" alt="Screenshot 3" width="30%">
     <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/d7b80487-85fe-4d11-87c9-4a0d6f05e1f2" alt="Screenshot 4" width="30%">
     <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/f8739cc0-84df-4f8b-b88f-3ac37eb21959" alt="Screenshot 5" width="30%">
-    <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/f8739cc0-84df-4f8b-b88f-3ac37eb21959" alt="Screenshot 5" width="30%">
-    <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/a6bcea26-cbcc-412f-b4a7-52dacc062c1b" alt="Screenshot 6" width="30%">
+    <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/7a924a17-cb76-4145-83df-bacde9c98e16" alt="Screenshot 6" width="30%">
+    <img src="https://github.com/SELSHA-CS/ecommerce_app_ui/assets/142321043/a6bcea26-cbcc-412f-b4a7-52dacc062c1b" alt="Screenshot 7" width="30%">
 
 </div>
 
