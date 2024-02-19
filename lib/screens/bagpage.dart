@@ -17,12 +17,12 @@ class BagPage extends StatelessWidget {
         leading: IconButton(
           onPressed: (){
             Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => MainPages())
+              MaterialPageRoute(builder: (context) => const MainPages())
             );
           }, 
-          icon: Icon(Icons.close)
+          icon: const Icon(Icons.close)
         ),
-        title: Center(child: Text("Shopping Bag", style: TextStyle(fontWeight: FontWeight.bold),)),
+        title: const Center(child: Text("Shopping Bag", style: TextStyle(fontWeight: FontWeight.bold),)),
       ),
       body: Column(
         children: [
@@ -30,7 +30,7 @@ class BagPage extends StatelessWidget {
             child: ListView(
               children: cart.map((product) => InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, 'productspage', arguments: ['id']);
+                  Navigator.pushNamed(context, 'productspage', arguments: product['id']);
                 },
                 child: ListTile(
                   leading: Container(
@@ -43,12 +43,12 @@ class BagPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  title: Text(product['name'], style: TextStyle(fontWeight: FontWeight.bold),),
+                  title: Text(product['name'], style: const TextStyle(fontWeight: FontWeight.bold),),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text("Size : 8"),
+                      const Text("Size : 8"),
                       Text(product['price']),
                     ],
                   ),
@@ -57,15 +57,15 @@ class BagPage extends StatelessWidget {
                       CircleAvatar(
                         radius: 15,
                         backgroundColor: Colors.grey[200],
-                        child: Text("-"),
+                        child: const Text("-"),
                       ),
-                      SizedBox(width: 5,),
-                      Text("1", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
-                      SizedBox(width: 5,),
+                      const SizedBox(width: 5,),
+                      const Text("1", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                      const SizedBox(width: 5,),
                       CircleAvatar(
                         radius: 15,
                         backgroundColor: Colors.grey[200],
-                        child: Text("+"),
+                        child: const Text("+"),
                       ),
                     ],
                   ),
@@ -81,7 +81,7 @@ class BagPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: (){
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => CheckOut())
+                    MaterialPageRoute(builder: (context) => const CheckOut())
                   );
                 }, 
                 style: ElevatedButton.styleFrom(
@@ -90,7 +90,7 @@ class BagPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   )
                 ),
-                child: Text("Checkout", style: TextStyle(
+                child: const Text("Checkout", style: TextStyle(
                   color: Colors.white,
                 ),),
               ),

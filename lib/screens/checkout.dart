@@ -1,5 +1,4 @@
 import 'package:ecommerce_app_ui/screens/bagpage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CheckOut extends StatelessWidget {
@@ -12,19 +11,19 @@ class CheckOut extends StatelessWidget {
         leading: IconButton(
           onPressed: (){
             Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => BagPage())
+              MaterialPageRoute(builder: (context) => const BagPage())
             );
           }, 
-          icon: Icon(Icons.arrow_forward_ios)
+          icon: const Icon(Icons.arrow_forward_ios)
         ),
-        title: Center(child: Text("Checkout", style: TextStyle(fontWeight: FontWeight.bold),)),
+        title: const Center(child: Text("Checkout", style: TextStyle(fontWeight: FontWeight.bold),)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
@@ -38,7 +37,7 @@ class CheckOut extends StatelessWidget {
                 Icon(Icons.arrow_forward_ios),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
@@ -52,7 +51,7 @@ class CheckOut extends StatelessWidget {
                 Icon(Icons.arrow_forward_ios),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
@@ -74,7 +73,7 @@ class CheckOut extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   )
                 ),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Promo Code"),
@@ -83,28 +82,28 @@ class CheckOut extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Subtotal"),
                 Text("\$857"),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Delivery"),
                 Text("\$0"),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Taxes"),
                 Text("\$73.92"),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Total"),
@@ -122,7 +121,7 @@ class CheckOut extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   )
                 ),
-                child: Text("Place Order", style: TextStyle(color: Colors.white),)
+                child: const Text("Place Order", style: TextStyle(color: Colors.white),)
               ),
             ),
           ],

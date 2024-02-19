@@ -16,11 +16,11 @@ class _MainPagesState extends State<MainPages> {
   var index = 0;
 
   var screens = [
-    HomePage(),
-    ShopPage(),
-    FavPage(),
-    BagPage(),
-    ProfilePage(),
+    const HomePage(),
+    const ShopPage(),
+    const FavPage(),
+    const BagPage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -37,14 +37,14 @@ class _MainPagesState extends State<MainPages> {
           unselectedItemColor: Colors.grey,
           currentIndex: index,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.home_outlined), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Shop"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(icon: Icon(Icons.search), label: "Shop"),
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.favorite_border), label: "Favorite"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.shopping_bag_outlined), label: "Bag"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.person_2_outlined), label: "Profile")
           ]),
       body: screens[index],

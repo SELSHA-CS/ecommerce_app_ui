@@ -13,8 +13,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(
-            title: Center(
+          const SliverAppBar(
+            title: const Center(
               child: Text("Shoes Store", style: TextStyle(
                 fontWeight: FontWeight.bold
               ),),
@@ -37,13 +37,13 @@ class HomePage extends StatelessWidget {
                   viewportFraction: 1,
                   initialPage: 1,
                   autoPlay: true,
-                  autoPlayInterval: Duration(seconds: 2),
+                  autoPlayInterval: const Duration(seconds: 2),
                   pauseAutoPlayOnTouch: true,
                 ),
               ),
             ),
           ),
-          SliverPadding(
+          const SliverPadding(
             padding: EdgeInsets.all(15.0),
             sliver: SliverToBoxAdapter(
               child: Text("New Arrivals", style: TextStyle(
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
             childAspectRatio: .8,
             children: products.map((product) => InkWell(
               onTap: (){
-                Navigator.pushNamed(context, 'productspage', arguments: ['id']);
+                Navigator.pushNamed(context, 'productspage', arguments: product['id']);
               },
               child: Card(
                 child: Column(
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20)
                           ),
@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
                         ),
                       )
                     ),
-                    Text(product['name'], style: TextStyle(fontWeight: FontWeight.bold),),
+                    Text(product['name'], style: const TextStyle(fontWeight: FontWeight.bold),),
                     Text(product['desc']),
                     Text(product['price'])
                   ],

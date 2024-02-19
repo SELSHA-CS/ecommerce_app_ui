@@ -14,7 +14,7 @@ class ProductPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_bag_outlined)),
+          IconButton(onPressed: (){}, icon: const Icon(Icons.shopping_bag_outlined)),
         ],
       ),
       body: CustomScrollView(
@@ -32,44 +32,44 @@ class ProductPage extends StatelessWidget {
                   viewportFraction: 1,
                   initialPage: 1,
                   autoPlay: true,
-                  autoPlayInterval: Duration(seconds: 2),
+                  autoPlayInterval: const Duration(seconds: 2),
                   pauseAutoPlayOnTouch: true,
                 )),
           ),
           SliverPadding(
-              padding: EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(15.0),
             sliver: SliverToBoxAdapter(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(product['name'], style: TextStyle(
+                    Text(product['name'], style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     Text(product['price']),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
                     Wrap(
                       //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       //mainAxisSize: MainAxisSize.min,
                         children: [
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 15,
                             backgroundColor: Colors.black,
                           ),
-                          SizedBox(width: 15,),
-                          CircleAvatar(
+                          const SizedBox(width: 15,),
+                          const CircleAvatar(
                             radius: 15,
                             backgroundColor: Colors.lightBlue,
                           ),
-                          SizedBox(width: 15,),
+                          const SizedBox(width: 15,),
                           CircleAvatar(
                             radius: 15,
                             backgroundColor: Colors.purple[300],
                           ),
                         ],
                     ),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
                     Wrap(
                       children: [
                         Container(
@@ -81,9 +81,9 @@ class ProductPage extends StatelessWidget {
                               color: Colors.grey,
                             )
                           ),
-                          child: Center(child: Text("5")),
+                          child: const Center(child: Text("5")),
                         ),
-                        SizedBox(width: 10,),
+                        const SizedBox(width: 10,),
                         Container(
                           height: 35,
                           width: 35,
@@ -93,9 +93,9 @@ class ProductPage extends StatelessWidget {
                                 color: Colors.grey,
                               )
                           ),
-                          child: Center(child: Text("6")),
+                          child: const Center(child: Text("6")),
                         ),
-                        SizedBox(width: 10,),
+                        const SizedBox(width: 10,),
                         Container(
                           height: 35,
                           width: 35,
@@ -105,9 +105,9 @@ class ProductPage extends StatelessWidget {
                                 color: Colors.grey,
                               )
                           ),
-                          child: Center(child: Text("7")),
+                          child: const Center(child: Text("7")),
                         ),
-                        SizedBox(width: 10,),
+                        const SizedBox(width: 10,),
                         Container(
                           height: 35,
                           width: 35,
@@ -117,9 +117,9 @@ class ProductPage extends StatelessWidget {
                                 color: Colors.grey,
                               )
                           ),
-                          child: Center(child: Text("8")),
+                          child: const Center(child: Text("8")),
                         ),
-                        SizedBox(width: 10,),
+                        const SizedBox(width: 10,),
                         Container(
                           height: 35,
                           width: 35,
@@ -129,15 +129,15 @@ class ProductPage extends StatelessWidget {
                                 color: Colors.grey,
                               )
                           ),
-                          child: Center(child: Text("9")),
+                          child: const Center(child: Text("9")),
                         )
                       ],
                     ),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
                     // Divider(
                     //   color: Colors.grey[500],
                     // ),
-                    ExpansionTile(
+                    const ExpansionTile(
                         title: Text("The Details"),
                       children: [
                         ListTile(
@@ -145,7 +145,7 @@ class ProductPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    ExpansionTile(
+                    const ExpansionTile(
                       title: Text("Size & Fit"),
                       children: [
                         ListTile(
@@ -153,7 +153,7 @@ class ProductPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    ExpansionTile(
+                    const ExpansionTile(
                       title: Text("Composition & Care"),
                       children: [
                         ListTile(
@@ -161,7 +161,7 @@ class ProductPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    Row(
+                    const Row(
                       children: [],
                     )
                   ],

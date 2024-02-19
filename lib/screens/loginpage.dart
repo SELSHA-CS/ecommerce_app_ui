@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Positioned(
+          const Positioned(
             top: 100,
             left: 100,
             child: Text("LOGIN", style: TextStyle(
@@ -24,7 +24,7 @@ class LoginPage extends StatelessWidget {
             child: Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.6,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
@@ -36,10 +36,10 @@ class LoginPage extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Text("Login", style: TextStyle(
                             fontSize: 30, fontWeight: FontWeight.bold,
                           ),),
@@ -54,7 +54,7 @@ class LoginPage extends StatelessWidget {
                           border: InputBorder.none,
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.grey
                             )
                           ) 
@@ -69,14 +69,14 @@ class LoginPage extends StatelessWidget {
                           border: InputBorder.none,
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.grey
                             )
                           ) 
                         ),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     MaterialButton(
                       color: Colors.black,
                       minWidth: 350,
@@ -86,10 +86,10 @@ class LoginPage extends StatelessWidget {
                       ),
                       onPressed: () async{
                         Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => MainPages())
+                          MaterialPageRoute(builder: (context) => const MainPages())
                         );
                       },
-                      child: Text("LOGIN", style: TextStyle(
+                      child: const Text("LOGIN", style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold
                       ),),

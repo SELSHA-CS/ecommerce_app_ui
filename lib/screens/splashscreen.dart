@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Timer(Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => RegPage())
       );
@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Container(
           height: 150,
           width: 150,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/1.png"),
               fit: BoxFit.fill,

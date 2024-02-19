@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
@@ -23,81 +23,81 @@ class ProfilePage extends StatelessWidget {
                 Text("Edit")
               ],
             ),
-            SizedBox(height: 20,),
-            Text("Profile", style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Text("Profile", style: TextStyle(fontWeight: FontWeight.bold),),
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("View Profile"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Orders"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Whishlist"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Gift Cards"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Text("Settings", style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Text("Settings", style: TextStyle(fontWeight: FontWeight.bold),),
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Shipping & Returns"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Help"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Contact Us"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
+            const SizedBox(height: 20,),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("About Us"),
                 Icon(Icons.arrow_forward),
               ],
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             MaterialButton(
                 onPressed: (){},
               minWidth: 500,
               height: 50,
               color: Colors.grey,
-              child: Text("Log Out"),
+              child: const Text("Log Out"),
             ),
           ],
         ),

@@ -12,9 +12,9 @@ class FavPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Favorites", style: TextStyle(fontWeight: FontWeight.bold),)),
+        title: const Center(child: Text("Favorites", style: TextStyle(fontWeight: FontWeight.bold),)),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.search))
+          IconButton(onPressed: (){}, icon: const Icon(Icons.search))
         ],
       ),
       body: GridView.count(
@@ -22,7 +22,7 @@ class FavPage extends StatelessWidget {
         childAspectRatio: .9,
         children: fav.map((product) => InkWell(
           onTap: (){
-            Navigator.pushNamed(context, 'productspage', arguments: [product['id']]);
+            Navigator.pushNamed(context, 'productspage', arguments: product['id']);
           },
           child: Column(
             children: [
@@ -39,8 +39,8 @@ class FavPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Text(product['name'], style: TextStyle(fontWeight: FontWeight.bold),),
-              Text(product['price'], style: TextStyle(color: Colors.grey),)
+              Text(product['name'], style: const TextStyle(fontWeight: FontWeight.bold),),
+              Text(product['price'], style: const TextStyle(color: Colors.grey),)
             ],
           ),
         )).toList(),
